@@ -12,12 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <div class="col-xs-4">
+     <%= f.label :name %><br>
+    <%= f.text_field :name ,:class=> "form-control" %>
+    </div>
   </div>
   <div class="field">
+   <div class="col-xs-4">
     <%= f.label :desc %><br>
-    <%= f.text_field :desc %>
+    <%= f.text_field :desc, :class=> "form-control" %>
+    </div>
   </div>
   <div class="field">
     <%= f.label :status %><br>
